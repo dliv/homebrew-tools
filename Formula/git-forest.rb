@@ -1,16 +1,16 @@
 class GitForest < Formula
   desc "Multi-repo worktree orchestrator for parallel development"
   homepage "https://github.com/dliv/workforest"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dliv/workforest/releases/download/v#{version}/git-forest-aarch64-apple-darwin.tar.gz"
-      sha256 "ab2ebb3cee611913bc4d50f326c7bfc83230c02b9874040e5edc8d15e60b4c97"
+      sha256 "9795a79f6f0b5bf09981c67da246c2ca1247d65b218e078c96284506c50658f1"
     elsif Hardware::CPU.intel?
       url "https://github.com/dliv/workforest/releases/download/v#{version}/git-forest-x86_64-apple-darwin.tar.gz"
-      sha256 "82c39430001c5f3e5a8a3d2b7a0a59219d16e8b31f237d7c681e847118f0aa79"
+      sha256 "36f97625c206fb5d3dd540c12ddb82aa2f1d5544833f6ce5811a21eef819c28d"
     end
   end
 
