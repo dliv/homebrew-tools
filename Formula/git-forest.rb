@@ -7,10 +7,10 @@ class GitForest < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dliv/workforest/releases/download/v#{version}/git-forest-aarch64-apple-darwin.tar.gz"
-      sha256 "8c45f1a45175d8058b41c477f0c18565e8bdd937da043e2ed8f02a8a327ae3d0"
+      sha256 "b0cd1a24b1f7aa55cd22c14f4ebfcead74cc575672fa393fde07c05076e06a63"
     elsif Hardware::CPU.intel?
       url "https://github.com/dliv/workforest/releases/download/v#{version}/git-forest-x86_64-apple-darwin.tar.gz"
-      sha256 "7455261ab7505c25039de2d591ebd73af3f977db42a29465ecc5da8b97db9915"
+      sha256 "723c9430a5d71364618c4cac833108c39072b041f03d15d3cb00c199a24d2810"
     end
   end
 
