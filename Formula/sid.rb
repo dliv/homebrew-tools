@@ -7,10 +7,10 @@ class Sid < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dliv/slopid/releases/download/v#{version}/sid-aarch64-apple-darwin.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "30c5503f633d52143a1bb4d4a4554f191b501387b78e1e8dcc6adaa379c22cc4"
     elsif Hardware::CPU.intel?
       url "https://github.com/dliv/slopid/releases/download/v#{version}/sid-x86_64-apple-darwin.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "9579eba5fe05323da4377ed1d1efa8d3e6c16464a59651754916f18762d061ca"
     end
   end
 
