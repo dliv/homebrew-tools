@@ -1,16 +1,16 @@
 class Sid < Formula
   desc "Deterministic local task memory for humans and agents"
   homepage "https://github.com/dliv/slopid"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dliv/slopid/releases/download/v#{version}/sid-aarch64-apple-darwin.tar.gz"
-      sha256 "8658a5ddd669edc5fe2b48153d676267c209d792ab51e63ae7f367da5134ceb5"
+      sha256 "8bcaab4d172c9e2ca8515191e451cafd73a3b462cee528560d83f29075b82e13"
     elsif Hardware::CPU.intel?
       url "https://github.com/dliv/slopid/releases/download/v#{version}/sid-x86_64-apple-darwin.tar.gz"
-      sha256 "6fc5acc93464b44985a5e5c0c301ec9556781325719e20c2b92e62960f96b780"
+      sha256 "3a9e3de5bbcae38413f073846a39105ff3906c9c3379699f03047d002c0d0d52"
     end
   end
 
